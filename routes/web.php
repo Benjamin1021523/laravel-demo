@@ -21,4 +21,5 @@ Route::get('/', function () {
 // Route::get('first', 'FirstController@index')->name('index');
 Route::prefix('first')->group(function () {
   Route::get('', 'FirstController@index');
+  Route::get('api', 'FirstController@api');
 });
